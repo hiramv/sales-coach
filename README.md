@@ -32,6 +32,16 @@ Each practice attempt is scored 1-5 on:
 
 ### Install
 
+**Option A: Let your agent do it**
+
+Paste this to your OpenClaw agent:
+
+> Install this skill: https://github.com/hiramv/sales-coach
+
+Your agent will clone it, set it up, and walk you through the config. Done.
+
+**Option B: Manual install**
+
 1. Copy the `sales-coach` folder to your OpenClaw skills directory:
    ```bash
    cp -r sales-coach ~/clawd/skills/
