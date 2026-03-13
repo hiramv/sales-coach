@@ -27,6 +27,8 @@ Each practice attempt is scored 1-5 on:
 - [OpenClaw](https://github.com/openclaw/openclaw) installed
 - [ElevenLabs](https://elevenlabs.io) API key (free tier works)
 - Python 3.9+ with `elevenlabs` and `python-dotenv` packages
+- Google Sheet for performance tracking (optional but recommended)
+- `gog` CLI configured for Google Sheets access ([setup guide](https://github.com/openclaw/openclaw))
 
 ### Install
 
@@ -47,6 +49,12 @@ Each practice attempt is scored 1-5 on:
    ```bash
    pip install elevenlabs python-dotenv
    ```
+
+4. (Optional) Create a Google Sheet for tracking and add the sheet ID to your config:
+   ```bash
+   echo "GOOGLE_SHEET_ID=your_sheet_id_here" >> ~/clawd/skills/sales-coach/scripts/.env
+   ```
+   The agent will auto-create headers and log scores after each session.
 
 ## Usage
 
@@ -104,6 +112,10 @@ sales-coach/
     ├── frameworks.md               — Scoring rubric, common traps, reframe patterns
     └── transcript-format.md        — Supported transcript formats
 ```
+
+## Architecture Note
+
+This skill works through your existing OpenClaw agent — no separate agent definitions needed. The AI prospect personas are created as ElevenLabs Conversational AI voice agents, not OpenClaw agents. Your main agent handles transcript analysis, scoring, and coaching.
 
 ## Privacy
 
