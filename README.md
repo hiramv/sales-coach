@@ -4,21 +4,21 @@ Practice sales demos with AI prospects that talk back. Built as an [OpenClaw](ht
 
 ## What it does
 
-- **Live voice practice** — AI plays your prospect on a real-time voice call (ElevenLabs Conversational AI)
-- **Realistic pushback** — prospects push back on objections, call out feature dumps, and react naturally
-- **Transcript analysis** — upload real meeting transcripts to practice with actual objections you've faced
-- **Rewind & retry** — bookmark key moments and practice the same objection until your response is automatic
-- **Performance tracking** — scored on 5 dimensions after each session, logged to Google Sheets for trend analysis
+- **Live voice practice** - AI plays your prospect on a real-time voice call (ElevenLabs Conversational AI)
+- **Realistic pushback** - prospects push back on objections, call out feature dumps, and react naturally
+- **Transcript analysis** - upload real meeting transcripts to practice with actual objections you've faced
+- **Rewind & retry** - bookmark key moments and practice the same objection until your response is automatic
+- **Performance tracking** - scored on 5 dimensions after each session, logged to Google Sheets for trend analysis
 
 ## Scoring Dimensions
 
 Each practice attempt is scored 1-5 on:
 
-- 🎧 **Listen vs. Defend** — did you acknowledge the concern or immediately justify?
-- ❓ **Question Quality** — did you ask an open question that uncovered the real concern?
-- 🎯 **Concern Addressed** — did you identify and address the underlying fear?
-- ✂️ **Conciseness** — tight response or feature dump?
-- 🔄 **Reframe Strength** — did you turn the objection into a reason to buy?
+- 🎧 **Listen vs. Defend** - did you acknowledge the concern or immediately justify?
+- ❓ **Question Quality** - did you ask an open question that uncovered the real concern?
+- 🎯 **Concern Addressed** - did you identify and address the underlying fear?
+- ✂️ **Conciseness** - tight response or feature dump?
+- 🔄 **Reframe Strength** - did you turn the objection into a reason to buy?
 
 ## Setup
 
@@ -114,18 +114,18 @@ Describe any buyer persona and the agent builds a practice scenario:
 
 ```
 sales-coach/
-├── SKILL.md                        — Core workflow and practice mode
-├── README.md                       — This file
+├── SKILL.md                        - Core workflow and practice mode
+├── README.md                       - This file
 ├── scripts/
-│   └── speak.py                    — ElevenLabs TTS helper
+│   └── speak.py                    - ElevenLabs TTS helper
 └── references/
-    ├── frameworks.md               — Scoring rubric, common traps, reframe patterns
-    └── transcript-format.md        — Supported transcript formats
+    ├── frameworks.md               - Scoring rubric, common traps, reframe patterns
+    └── transcript-format.md        - Supported transcript formats
 ```
 
 ## Architecture Note
 
-This skill works through your existing OpenClaw agent — no separate agent definitions needed. The AI prospect personas are created as ElevenLabs Conversational AI voice agents, not OpenClaw agents. Your main agent handles transcript analysis, scoring, and coaching.
+This skill works through your existing OpenClaw agent - no separate agent definitions needed. The AI prospect personas are created as ElevenLabs Conversational AI voice agents, not OpenClaw agents. Your main agent handles transcript analysis, scoring, and coaching.
 
 ## Privacy
 
@@ -133,7 +133,7 @@ Everything runs locally. No transcripts or recordings are uploaded to any server
 
 ## License
 
-MIT — do whatever you want with it.
+MIT - do whatever you want with it.
 
 ## Author
 
