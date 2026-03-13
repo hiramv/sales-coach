@@ -28,7 +28,7 @@ Each practice attempt is scored 1-5 on:
 - [ElevenLabs](https://elevenlabs.io) API key (free tier works)
 - Python 3.9+ with `elevenlabs` and `python-dotenv` packages
 - Google Sheet for performance tracking (optional but recommended)
-- `gog` CLI configured for Google Sheets access ([setup guide](https://github.com/openclaw/openclaw))
+- `gog` CLI configured for Google Sheets access ([setup guide](https://github.com/kublikon/gog))
 
 ### Install
 
