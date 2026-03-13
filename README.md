@@ -66,7 +66,15 @@ The agent will:
 
 > "Here's a transcript from my last demo call. Help me practice the tough moments."
 
-Paste or upload a transcript from Fireflies, Zoom, Otter, Gong, or plain text. The agent will:
+Paste or upload a transcript from any of these platforms:
+- **Fireflies.ai**
+- **Zoom**
+- **Otter.ai**
+- **Gong**
+- **Google Meet**
+- **Plain text / custom format**
+
+The agent will:
 1. Extract key moments (objections, buying signals, missed opportunities)
 2. Build a practice session around those moments
 3. Let you rewind and retry any moment
